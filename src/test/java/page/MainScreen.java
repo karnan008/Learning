@@ -1,6 +1,8 @@
 package page;
 
 import java.time.Duration;
+import java.util.Random;
+import java.util.UUID;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -17,10 +19,6 @@ public class MainScreen extends ProjectSpecificationMethod{
 	public MainScreen(WebDriver ldriver)
 	{
 		this.driver = ldriver;
-	}
-	public void computersTab()
-	{
-		driver.findElement(By.xpath("(//a[@href=\"/computers\"])[1]")).click();
 	}
 	public MainScreen clickDesktop()
 	{
@@ -176,6 +174,49 @@ public class MainScreen extends ProjectSpecificationMethod{
 		driver.findElement(By.xpath("//a[@href=\"/logout\"]")).click();
 		return this;
 	}
+	
+	//contact Page 
+	public MainScreen contactFirstName()
+	{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id=\"firstName\"]")));
+        element.sendKeys("Karnan");
+		return this;
+	}
+	public MainScreen contactLastName()
+	{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id=\"lastName\"]")));
+        element.sendKeys("Athisivam");
+		return this;
+	}
+	public MainScreen contactEmail(String domain)
+	{
+		Random random = new Random();
+        int uniqueNumber = random.nextInt(1000000);
+        System.out.println("Login Email ID: "+"sathya" + uniqueNumber + "@" + domain);
+        String emailID="sathya" + uniqueNumber + "@" + domain;
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id=\"email\"]")));
+        element.sendKeys(emailID);
+		return this;
+	}
+	public MainScreen contactPassword(String password)
+	{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id=\"password\"]")));
+        element.sendKeys(password);
+		return this;
+	}
+	public MainScreen contactSubmit()
+	{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id=\"submit\"]")));
+        element.click();
+		return this;
+	}
+	
 
 
 }

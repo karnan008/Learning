@@ -1,8 +1,14 @@
 package page;
 
 import base.ProjectSpecificationMethod;
+
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage extends ProjectSpecificationMethod {
 
@@ -21,4 +27,7 @@ public class LoginPage extends ProjectSpecificationMethod {
         driver.findElement(By.xpath("//input[contains(@class,'login-button')]")).click();
         return new Homepage(driver);
     }
+    
+    //contact Page
+   
 }

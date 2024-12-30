@@ -12,11 +12,11 @@ import java.time.Duration;
 
 public class UtilityClass {
    public static WebDriver driver;
-   public void browserlaunch(){
+   public void browserlaunch(String URL){
 
 	   WebDriverManager.chromedriver().setup();
 	   driver = new ChromeDriver();
-	   driver.get("https://demowebshop.tricentis.com/");
+	   driver.get(URL);
        driver.manage().window().maximize();
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 

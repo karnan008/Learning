@@ -7,7 +7,7 @@ import base.ProjectSpecificationMethod;
 import page.Homepage;
 import page.MainScreen;
 
-public class Smoke extends ProjectSpecificationMethod {
+public class productSmoke extends ProjectSpecificationMethod {
 
 
 
@@ -16,7 +16,7 @@ public class Smoke extends ProjectSpecificationMethod {
 	public static void Login()
 	{
 		Homepage obj = new Homepage(driver);
-		obj.launchandLoad();
+		obj.launchandLoad(productURL);
 		obj.loginClick()
 		.mail("meh472@gmail.com")
 		.Password("Sathiya86")

@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +102,27 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.TC_002_LoginPage" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.contactSmoke" class="method navigator-link" hash-for-method="contactAdd">contactAdd</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.TC_002_LoginPage" class="method navigator-link" hash-for-method="Logout">Logout</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.contactSmoke" class="method navigator-link" hash-for-method="contactDelete">contactDelete</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.TC_002_LoginPage" class="method navigator-link" hash-for-method="ProdusctOrdered">ProdusctOrdered</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.contactSmoke" class="method navigator-link" hash-for-method="contactEdit">contactEdit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.contactSmoke" class="method navigator-link" hash-for-method="contactLogout">contactLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.contactSmoke" class="method navigator-link" hash-for-method="contactSignUp">contactSignUp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -130,28 +140,42 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.TC_002_LoginPage</span>
+              <span class="class-name">testcases.contactSmoke</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Login">
-                  </a> <!-- Login -->
-                  <span class="method-name">Login</span>
+                  <a name="contactAdd">
+                  </a> <!-- contactAdd -->
+                  <span class="method-name">contactAdd</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Logout">
-                  </a> <!-- Logout -->
-                  <span class="method-name">Logout</span>
+                  <a name="contactDelete">
+                  </a> <!-- contactDelete -->
+                  <span class="method-name">contactDelete</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="ProdusctOrdered">
-                  </a> <!-- ProdusctOrdered -->
-                  <span class="method-name">ProdusctOrdered</span>
+                  <a name="contactEdit">
+                  </a> <!-- contactEdit -->
+                  <span class="method-name">contactEdit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactLogout">
+                  </a> <!-- contactLogout -->
+                  <span class="method-name">contactLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contactSignUp">
+                  </a> <!-- contactSignUp -->
+                  <span class="method-name">contactSignUp</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,7 +183,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/lm/6yyjzpm17l1dr4crhvsmpxzh0000gn/T/testng-eclipse--14838198/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/lm/6yyjzpm17l1dr4crhvsmpxzh0000gn/T/testng-eclipse--1258920412/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -168,7 +192,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.TC_002_LoginPage&quot;/&gt;
+      &lt;class name=&quot;testcases.contactSmoke&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -208,24 +232,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ProdusctOrdered')
-data.setCell(0, 2, 'testcases.TC_002_LoginPage')
-data.setCell(0, 3, 23341);
+data.setCell(0, 1, 'contactAdd')
+data.setCell(0, 2, 'testcases.contactSmoke')
+data.setCell(0, 3, 28324);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Login')
-data.setCell(1, 2, 'testcases.TC_002_LoginPage')
-data.setCell(1, 3, 22954);
+data.setCell(1, 1, 'contactSignUp')
+data.setCell(1, 2, 'testcases.contactSmoke')
+data.setCell(1, 3, 13535);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Logout')
-data.setCell(2, 2, 'testcases.TC_002_LoginPage')
-data.setCell(2, 3, 1705);
+data.setCell(2, 1, 'contactEdit')
+data.setCell(2, 2, 'testcases.contactSmoke')
+data.setCell(2, 3, 6708);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'contactLogout')
+data.setCell(3, 2, 'testcases.contactSmoke')
+data.setCell(3, 3, 4723);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'contactDelete')
+data.setCell(4, 2, 'testcases.contactSmoke')
+data.setCell(4, 3, 4008);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 48 seconds</span>
+              <span class="suite-total-time">Total running time: 57 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -251,18 +283,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.TC_002_LoginPage</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.contactSmoke</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">Login</span>
+                <span class="method-name">contactSignUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">ProdusctOrdered</span>
-                <span class="method-start">22974 ms</span>
+                <span class="method-name">contactAdd</span>
+                <span class="method-start">13550 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Logout</span>
-                <span class="method-start">46325 ms</span>
+                <span class="method-name">contactEdit</span>
+                <span class="method-start">41884 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">contactDelete</span>
+                <span class="method-start">48596 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">contactLogout</span>
+                <span class="method-start">52609 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -57,6 +57,15 @@ public class Homepage extends ProjectSpecificationMethod {
 		return this;
 		
 	}
+	//contact Page 
+	 public MainScreen contactSignUp()
+	    {
+	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+	        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@onclick=\"location.href='/addUser'\"]")));
+	        element.click();
+	    	return new MainScreen(driver);
+	    	
+	    }
 	
 
 
